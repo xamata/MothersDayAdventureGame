@@ -1,3 +1,4 @@
+﻿using MothersDayAdventureGame.Scene;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,15 @@ namespace MothersDayAdventureGame
 {
     internal class Game
     {
+        public TitleScene MyTitleScene;
+
         public Game()
         {
+            MyTitleScene = new TitleScene(this);
         }
         public void Run()
         {
-            WriteLine("Mother's Day Adventure Game");
+            MyTitleScene.Run();
 
             ConsoleUtils.WaitForKeyPress();
         }
