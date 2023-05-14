@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,9 @@ namespace MothersDayAdventureGame
 {
     internal class Game
     {
+        public Game()
+        {
+        }
         public void Run()
         {
             WriteLine("Mother's Day Adventure Game");
