@@ -57,7 +57,7 @@ namespace MothersDayAdventureGame
         public int Run()
         {
             ConsoleKey keyPressed;
-            // Loop gets a key from the user
+            // Loop updates selectedIndex with up/down keys until 'enter' key is pressed
             do
             {
                 Clear();
@@ -66,7 +66,7 @@ namespace MothersDayAdventureGame
                 ConsoleKeyInfo keyInfo = ReadKey(true);
                 keyPressed = keyInfo.Key;
 
-                // Update Sele ctedIndex based on arrow keys. 
+                // Updates SelectedIndex if up/down keys are pressed 
                 if (keyInfo.Key == ConsoleKey.UpArrow)
                 {
                     SelectedIndex -= 1;
@@ -83,9 +83,11 @@ namespace MothersDayAdventureGame
                         SelectedIndex = 0;
                     }
                 }
+            // Exit loop if 'enter' key pressed
             } while (keyPressed != ConsoleKey.Enter);
 
             Clear();
+            // Returns Int dataType
             return SelectedIndex;
         }
     }
