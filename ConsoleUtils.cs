@@ -14,7 +14,7 @@ namespace MothersDayAdventureGame
             Console.ReadKey(true);
         }
 
-        public static void QuitGame()
+        public static void QuitConsole()
         {
             Console.WriteLine("(Press any key to exit...)");
             Console.ReadKey(true);
