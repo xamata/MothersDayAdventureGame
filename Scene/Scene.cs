@@ -8,5 +8,10 @@ namespace MothersDayAdventureGame.Scene
 {
     internal class Scene
     {
+        private Game MyGame;
+        public Scene(Game game) 
+        {
+            MyGame = game;
+        }
     }
 }
