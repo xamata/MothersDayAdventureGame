@@ -13,8 +13,7 @@ namespace MothersDayAdventureGame
         {
             WriteLine("Mother's Day Adventure Game");
 
-            WriteLine("Press any key to exit...");
-            ReadKey(true);
+            ConsoleUtils.WaitForKeyPress();
         }
     }
 }
