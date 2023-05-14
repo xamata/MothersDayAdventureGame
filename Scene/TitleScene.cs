@@ -15,6 +15,7 @@ namespace MothersDayAdventureGame.Scene
             string prompt = "Title scene";
             string[] options = { "Play", "About", "Exit" };
             Menu menu = new Menu(prompt, options);
+            menu.Run();
         }
     }
 }
