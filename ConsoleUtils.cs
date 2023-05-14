@@ -8,13 +8,13 @@ namespace MothersDayAdventureGame
 {
     internal class ConsoleUtils
     {
-        static void WaitForKeyPress()
+        public static void WaitForKeyPress()
         {
             Console.WriteLine("(Press any key to continue...)");
             Console.ReadKey(true);
         }
 
-        static void QuitGame()
+        public static void QuitGame()
         {
             Console.WriteLine("(Press any key to exit...)");
             Console.ReadKey(true);
