@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace MothersDayAdventureGame.Scene
 {
@@ -11,11 +12,12 @@ namespace MothersDayAdventureGame.Scene
     {
         public DenScene(Game game): base(game)
         {
-
         }
 
         public void Run()
         {
+            MyGame.MyPlayer.PickUpDye(ConsoleColor.Green);
+            MyGame.MyPlayer.HasFlowers = true;
             string prompt = @$"DEN SCENE";
             string[] options = { "Backyard", "Frontyard", "Room", "Kitchen" };
             Menu menu = new Menu(prompt, options);
@@ -33,10 +35,18 @@ namespace MothersDayAdventureGame.Scene
                     MyGame.MyRoomScene.Run();
                     break;
                 case 3:
-                    // TODO: Display Kitchen
+                    if (MyGame.MyPlayer.HasDye && MyGame.MyPlayer.HasFlowers)
+                    {
+                        MyGame.MyKitchenScene.Run();
+                    }
+                    else
+                    {
+                        WriteLine("Mom is in there, I better not go in!");
+                        ConsoleUtils.WaitForKeyPress();
+                        Run();
+                    };
                     break;
             }
-            ConsoleUtils.WaitForKeyPress();
         }
     }
 }

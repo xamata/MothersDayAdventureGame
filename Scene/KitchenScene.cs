@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace MothersDayAdventureGame.Scene
 {
@@ -15,7 +16,22 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            Console.WriteLine("Kitchen Scene");
+            string prompt = @$"Kitchen SCENE";
+            string[] options = { "Give mom gifts", "Leave room" };
+            Menu menu = new Menu(prompt, options);
+            int selectedIndex = menu.Run();
+
+            switch (selectedIndex)
+            {
+                case 0:
+                    WriteLine("You give mom the flowers you picked up.");
+                    WriteLine("She loves them dearly and gives you a big hug and kiss!");
+                    MyGame.MyCreditScene.Run();
+                    break;
+                case 1:
+                    MyGame.MyDenScene.Run();
+                    break;
+            }
         }
     }
 }
