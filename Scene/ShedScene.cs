@@ -34,19 +34,19 @@ Pick a color of paint to choose from.";
                 {
                     case 0:
                         WriteLine("You pick up the red paint and go back inside.");
-                        MyGame.MyPlayer.PickUpPaint(ConsoleColor.DarkRed);
+                        MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkRed);
                         break;
                     case 1:
                         WriteLine("You pick up the green paint and go back inside.");
-                        MyGame.MyPlayer.PickUpPaint(ConsoleColor.DarkGreen);
+                        MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkGreen);
                         break;
                     case 2:
                         WriteLine("You pick up the blue paint and go back inside.");
-                        MyGame.MyPlayer.PickUpPaint(ConsoleColor.DarkBlue);
+                        MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkBlue);
                         break;
                     case 3:
                         WriteLine("You pick up the pink paint and go back inside.");
-                        MyGame.MyPlayer.PickUpPaint(ConsoleColor.DarkMagenta);
+                        MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkMagenta);
                         break;
                 }
                 MyGame.MyDenScene.Run();

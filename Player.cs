@@ -11,18 +11,18 @@ namespace MothersDayAdventureGame
         public bool HasFlashlight { get; set; }
         public bool HasMarble { get; set; }
         public bool HasFlowers { get; set; }
-        public bool HasPaint { get; private set; }
+        public bool HasDye { get; private set; }
         public ConsoleColor PaintColor { get; private set; }
 
         public Player() {
             HasFlashlight = false;
             HasMarble = false;
-            HasPaint = false;
+            HasDye = false;
         }
 
-        public void PickUpPaint(ConsoleColor color)
+        public void PickUpDye(ConsoleColor color)
         {
-            HasPaint = true;
+            HasDye = true;
             PaintColor = color;
         }
 
