@@ -27,7 +27,7 @@ Would you like to play again?";
             {
                 case 0:
                     // Restarts the game
-                    MyGame.Run();
+                    MyGame.Start();
                     return;
                 case 1:
                     ConsoleUtils.QuitConsole();
@@ -35,5 +35,4 @@ Would you like to play again?";
             }
         }
     }
-    }
-}
+ }

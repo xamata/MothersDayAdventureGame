@@ -20,7 +20,7 @@ namespace MothersDayAdventureGame
             }
 
             Game myGame = new Game();
-            myGame.Run();
+            myGame.Start();
         }
     }
 }

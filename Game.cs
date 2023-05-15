@@ -31,7 +31,7 @@ namespace MothersDayAdventureGame
             MyCreditScene = new CreditScene(this);
             MyPlayer = new Player();
         }
-        public void Run()
+        public void Start()
         {
             MyTitleScene.Run();
 
