@@ -16,8 +16,6 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            MyGame.MyPlayer.PickUpDye(ConsoleColor.Green);
-            MyGame.MyPlayer.HasFlowers = true;
             string prompt = @$"DEN SCENE";
             string[] options = { "Backyard", "Frontyard", "Room", "Kitchen" };
             Menu menu = new Menu(prompt, options);
