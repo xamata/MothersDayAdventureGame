@@ -30,7 +30,7 @@ namespace MothersDayAdventureGame.Scene
                     MyGame.MyFrontyardScene.Run();
                     break;
                 case 2:
-                    // TODO: Display Room
+                    MyGame.MyRoomScene.Run();
                     break;
                 case 3:
                     // TODO: Display Kitchen
