@@ -12,7 +12,22 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            Console.WriteLine("Backyard Scene");
+            string prompt = @$"Backyard SCENE";
+            string[] options = { "Go into the shed.","Go back inside." };
+            Menu menu = new Menu(prompt, options);
+            int selectedIndex = menu.Run();
+
+            switch (selectedIndex)
+            {
+                case 0:
+                    // TODO: if has flashlight pick a paint, else too dark go back
+                    MyGame.MyShedScene.Run();
+                    break;
+                case 1:
+                    MyGame.MyDenScene.Run();
+                    break;
+            }
+            ConsoleUtils.WaitForKeyPress();
         }
     }
 }

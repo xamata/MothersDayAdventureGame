@@ -24,7 +24,7 @@ namespace MothersDayAdventureGame.Scene
             switch (selectedIndex)
             {
                 case 0:
-                    // TODO: Display Backyard
+                    MyGame.MyBackyardScene.Run();
                     break;
                 case 1:
                     // TODO: Display Frontyard

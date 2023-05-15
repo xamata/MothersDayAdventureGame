@@ -16,6 +16,7 @@ namespace MothersDayAdventureGame
         public FrontyardScene MyFrontyardScene;
         public RoomScene MyRoomScene;
         public KitchenScene MyKitchenScene;
+        public ShedScene MyShedScene;
 
         public Game()
         {
@@ -25,7 +26,7 @@ namespace MothersDayAdventureGame
             MyFrontyardScene = new FrontyardScene(this);
             MyRoomScene = new RoomScene(this);
             MyKitchenScene  = new KitchenScene(this);
-
+            MyShedScene = new ShedScene(this);
         }
         public void Run()
         {
