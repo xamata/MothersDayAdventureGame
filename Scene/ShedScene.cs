@@ -16,7 +16,6 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            MyGame.MyPlayer.HasFlashlight = true;
             if (!MyGame.MyPlayer.HasFlashlight)
             {
                 WriteLine("It's too dark to see in here. There's nothing to do...");
@@ -50,6 +49,7 @@ Pick a color of paint to choose from.";
                         MyGame.MyPlayer.PickUpPaint(ConsoleColor.DarkMagenta);
                         break;
                 }
+                MyGame.MyDenScene.Run();
             }
         }
     }
