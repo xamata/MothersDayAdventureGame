@@ -13,7 +13,7 @@ namespace MothersDayAdventureGame.Scene
         public void Run()
         {
             string prompt = @$"Backyard SCENE";
-            string[] options = { "Go into the shed.","Go back inside." };
+            string[] options = { "Go into the shed","Go back inside" };
             Menu menu = new Menu(prompt, options);
             int selectedIndex = menu.Run();
 
