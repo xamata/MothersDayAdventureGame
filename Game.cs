@@ -21,6 +21,10 @@ namespace MothersDayAdventureGame
         {
             MyTitleScene = new TitleScene(this);
             MyDenScene = new DenScene(this);
+            MyBackyardScene = new BackyardScene(this);
+            MyFrontyardScene = new FrontyardScene(this);
+            MyRoomScene = new RoomScene(this);
+            MyKitchenScene  = new KitchenScene(this);
 
         }
         public void Run()
