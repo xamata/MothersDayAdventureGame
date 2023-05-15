@@ -17,7 +17,6 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            MyGame.MyPlayer.HasMarble = true;
             string prompt = @$"Frontyard SCENE";
             string[] options = { "Go into garden","Distract garden gnome", "Go back inside" };
             Menu menu = new Menu(prompt, options);
