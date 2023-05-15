@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
+using Figgle;
 
 namespace MothersDayAdventureGame.Scene
 {
@@ -13,7 +14,10 @@ namespace MothersDayAdventureGame.Scene
         
         public void Run()
         {
-            string prompt = "Title scene";
+            string prompt = @$"{FiggleFonts.FlowerPower.Render("Mom's Gift")}
+You just arrived home and something terrible has happened. You forgot to stop by the
+store and get your mom a gift for her birthday! You hear in the other room... Quick!
+Go find a gift!";
             string[] options = { "Play", "About", "Exit" };
             Menu menu = new Menu(prompt, options);
             int selectedIndex = menu.Run();
