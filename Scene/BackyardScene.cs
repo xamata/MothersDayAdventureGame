@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace MothersDayAdventureGame.Scene
 {
-    internal class BackyardScene
+    internal class BackyardScene : Scene
     {
+        public BackyardScene(Game game) : base(game) { }
+
+        public void Run()
+        {
+            Console.WriteLine("Backyard Scene");
+        }
     }
 }

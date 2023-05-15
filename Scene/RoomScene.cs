@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace MothersDayAdventureGame.Scene
 {
-    internal class RoomScene
+    internal class RoomScene : Scene
     {
+        public RoomScene(Game game) : base(game)
+        {
+            
+        }
+
+        public void Run()
+        {
+            Console.WriteLine("Room Scene");
+        }
     }
 }

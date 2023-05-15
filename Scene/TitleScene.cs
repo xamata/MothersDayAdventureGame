@@ -25,7 +25,7 @@ Go find a gift!";
             switch(selectedIndex)
             {
                 case 0:
-                    // TODO: Display Den Scene
+                    MyGame.MyDenScene.Run();
                     break;
                 case 1:
                     DisplayAboutInfo();
