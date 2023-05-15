@@ -17,7 +17,7 @@ namespace MothersDayAdventureGame
         public RoomScene MyRoomScene;
         public KitchenScene MyKitchenScene;
         public ShedScene MyShedScene;
-
+        public Player MyPlayer;
         public Game()
         {
             MyTitleScene = new TitleScene(this);
@@ -27,6 +27,7 @@ namespace MothersDayAdventureGame
             MyRoomScene = new RoomScene(this);
             MyKitchenScene  = new KitchenScene(this);
             MyShedScene = new ShedScene(this);
+            MyPlayer = new Player();
         }
         public void Run()
         {
