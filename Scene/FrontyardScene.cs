@@ -25,8 +25,12 @@ namespace MothersDayAdventureGame.Scene
             switch (selectedIndex)
             {
                 case 0:
-                    if (GnomeHasMarble) 
-                    { 
+                    if (GnomeHasMarble && MyGame.MyPlayer.HasFlowers) 
+                    {
+                        WriteLine("You already picked the best flowers in the garden.");
+                    }
+                    else if (GnomeHasMarble)
+                    {
                         DisplayGarden();
                     }
                     else { 
@@ -62,11 +66,9 @@ namespace MothersDayAdventureGame.Scene
 
         private void DisplayGarden()
         {
-            if (MyGame.MyPlayer.HasFlowers) { WriteLine("has flowers"); } else { WriteLine("Doesn't have flowers"); }
             WriteLine("===Display Garden===");
             WriteLine("You pick the prettiest flowers you can find. Good thing mom has tons of them!");
             MyGame.MyPlayer.HasFlowers = true;
-            if (MyGame.MyPlayer.HasFlowers) { WriteLine("has flowers"); } else { WriteLine("Doesn't have flowers"); }
         }
     }
 }
