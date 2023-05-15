@@ -28,7 +28,7 @@ Go find a gift!";
                     // TODO: Display Den Scene
                     break;
                 case 1:
-                    // TODO: Display About Info
+                    DisplayAboutInfo();
                     break;
                 case 2:
                     ConsoleUtils.QuitConsole();
@@ -39,7 +39,12 @@ Go find a gift!";
 
         private void DisplayAboutInfo()
         {
-
+            Clear();
+            WriteLine("This game demo was created by Max Mata.");
+            WriteLine("It uses assets from ASCIIAA and ASCIIFlow.");
+            WriteLine("This is just a demo... full game coming to console near you soon!");
+            ConsoleUtils.WaitForKeyPress();
+            Run();
         }
     }
 }
