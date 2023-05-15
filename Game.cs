@@ -34,8 +34,6 @@ namespace MothersDayAdventureGame
         public void Start()
         {
             MyTitleScene.Run();
-
-            ConsoleUtils.WaitForKeyPress();
         }
     }
 }
