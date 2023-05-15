@@ -11,4 +11,10 @@
     <PackageReference Include="Figgle" Version="0.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TextArt.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
