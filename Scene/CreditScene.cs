@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
@@ -27,6 +28,7 @@ Would you like to play again?";
             {
                 case 0:
                     // Restarts the game
+                    MyGame.MyPlayer.ResetItems();
                     MyGame.Start();
                     return;
                 case 1:

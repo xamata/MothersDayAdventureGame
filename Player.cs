@@ -26,6 +26,11 @@ namespace MothersDayAdventureGame
             PaintColor = color;
         }
 
-
+        public void ResetItems()
+        {
+            HasFlashlight = false;
+            HasMarble = false;
+            HasDye = false;
+        }
     }
 }
