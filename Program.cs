@@ -5,7 +5,8 @@ namespace MothersDayAdventureGame
     {
         static void Main(string[] args)
         {
-            Console.Title = "Mom's Gift Adventure Game";
+            Title = "Mom's Gift Adventure Game";
+            CursorVisible = false;
 
             try
             {
