@@ -10,6 +10,7 @@ namespace MothersDayAdventureGame
     {
         public bool HasFlashlight { get; set; }
         public bool HasMarble { get; set; }
+        public bool HasFlowers { get; set; }
         public bool HasPaint { get; private set; }
         public ConsoleColor PaintColor { get; private set; }
 

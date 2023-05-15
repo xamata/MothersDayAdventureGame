@@ -27,7 +27,7 @@ namespace MothersDayAdventureGame.Scene
                     MyGame.MyBackyardScene.Run();
                     break;
                 case 1:
-                    // TODO: Display Frontyard
+                    MyGame.MyFrontyardScene.Run();
                     break;
                 case 2:
                     // TODO: Display Room
