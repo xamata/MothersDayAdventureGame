@@ -49,6 +49,7 @@ Pick a color of paint to choose from.";
                         MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkMagenta);
                         break;
                 }
+                ConsoleUtils.WaitForKeyPress();
                 MyGame.MyDenScene.Run();
             }
         }

@@ -168,3 +168,17 @@ https://www.asciiart.eu/buildings-and-places/other
           │              │ │ │ │ │ │ │             │
 ──────────┴──────────────┴─┴─┴─┴─┴─┴─┴─────────────┴───────────
 ~The Shed, xamata ASCIIFlow
+
+                __
+             .-'  |
+            /   <\|
+           /     \'
+           |_.- o-o
+           / C  -._)\
+          /',        |
+         |   `-,_,__,'
+         (,,)====[_]=|
+           '.   ____/
+            | -|-|_
+            |____)_)    
+~ [n4biS], https://ascii.co.uk/art/gnome

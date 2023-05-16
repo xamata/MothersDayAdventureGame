@@ -17,7 +17,7 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            string prompt = @$"Frontyard SCENE";
+            string prompt = @$"{TextArt.FrontyardArt}";
             string[] options = { "Go into garden","Distract garden gnome", "Go back inside" };
             Menu menu = new Menu(prompt, options);
             int selectedIndex = menu.Run();

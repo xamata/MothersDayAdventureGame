@@ -16,7 +16,7 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            string prompt = @$"DEN SCENE";
+            string prompt = @$"{TextArt.DenArt}";
             string[] options = { "Backyard", "Frontyard", "Room", "Kitchen" };
             Menu menu = new Menu(prompt, options);
             int selectedIndex = menu.Run();
