@@ -10,7 +10,7 @@ namespace MothersDayAdventureGame
 
             try
             {
-                WindowHeight = 35;
+                WindowHeight = 40;
                 WindowWidth = 115;
             }
             catch {
