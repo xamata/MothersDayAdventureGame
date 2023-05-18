@@ -15,8 +15,8 @@ namespace MothersDayAdventureGame.Scene
         public void Run()
         {
             string prompt = @$"{FiggleFonts.FlowerPower.Render("Mom's Gift")}
-You just arrived home and something terrible has happened. You forgot to stop by the
-store and get your mom a gift for her birthday! You hear in the other room... Quick!
+You just arrived home and something terrible has happened! You forgot to stop by the
+store and get your mom a gift for her birthday! You hear her in the other room... Quick!
 Go find a gift!";
             string[] options = { "Play", "About", "Exit" };
             Menu menu = new Menu(prompt, options);
@@ -41,7 +41,7 @@ Go find a gift!";
         {
             Clear();
             WriteLine("This game demo was created by Max Mata.");
-            WriteLine("It uses assets from ASCIIAA and ASCIIFlow.");
+            WriteLine("It uses assets from ASCIIAA, ASCIIClub, and ASCIIFlow.");
             WriteLine("This is just a demo... full game coming to console near you soon!");
             ConsoleUtils.WaitForKeyPress();
             Run();
