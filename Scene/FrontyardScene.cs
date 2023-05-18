@@ -33,7 +33,8 @@ namespace MothersDayAdventureGame.Scene
                     {
                         DisplayGarden();
                     }
-                    else { 
+                    else {
+                        WriteLine(TextArt.GnomeArt1);
                         WriteLine("That garden gnome is protecting his garden.");
                         WriteLine("Find something to distract him.");
                     };
@@ -42,11 +43,12 @@ namespace MothersDayAdventureGame.Scene
                     break;
                 case 1:
                     if (GnomeHasMarble)
-                    {
+                    {   WriteLine(TextArt.GnomeArt2);
                         WriteLine("The gnome is distracted by a shiny object.");
                     }
                     else if (MyGame.MyPlayer.HasMarble)
                     {
+                        WriteLine(TextArt.GnomeArt2);
                         WriteLine("You place your shiny marble next to the gnome.");
                         WriteLine("The gnome can't help but to stare at it.");
                         GnomeHasMarble = true;
