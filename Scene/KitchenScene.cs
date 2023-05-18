@@ -24,6 +24,7 @@ namespace MothersDayAdventureGame.Scene
             switch (selectedIndex)
             {
                 case 0:
+                    DisplayGift();
                     WriteLine("You give mom the flowers you picked up.");
                     WriteLine("She loves them dearly and gives you a big hug and kiss!");
                     MyGame.MyCreditScene.Run();
@@ -32,6 +33,12 @@ namespace MothersDayAdventureGame.Scene
                     MyGame.MyDenScene.Run();
                     break;
             }
+        }
+        
+        public void DisplayGift()
+        {
+            WriteLine("Gift here");
+            ConsoleUtils.WaitForKeyPress();
         }
     }
 }
