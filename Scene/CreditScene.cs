@@ -14,11 +14,14 @@ namespace MothersDayAdventureGame.Scene
 
         public void Run()
         {
-            string prompt = @"Thanks for playing Mom's Gift Adventure Game. I hope you found it endlessly enjoyable.
+            string prompt = @"Thanks for playing Mom's Gift Adventure Game. I hope you found it endlessly enjoyable!
 
 === Credits ===
 > ASCIIFlow, http://asciiflow.com/
-> TAAG, http://patorjk.com/software/taag/
+> Figgle, https://github.com/drewnoakes/figgle
+> ASCIIartclub, https://asciiart.club/
+> ASCII Art Archive, https://www.asciiart.eu/
+
 
 Would you like to play again?";
             string[] options = { "Yes", "No" };
@@ -28,6 +31,8 @@ Would you like to play again?";
             {
                 case 0:
                     // Restarts the game
+                    // Quick fix on restart
+                    MyGame.MyFrontyardScene.GnomeHasMarble = false;
                     MyGame.MyPlayer.ResetItems();
                     MyGame.Start();
                     return;
