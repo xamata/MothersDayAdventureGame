@@ -25,8 +25,6 @@ namespace MothersDayAdventureGame.Scene
             {
                 case 0:
                     DisplayGift();
-                    WriteLine("You give mom the flowers you picked up.");
-                    WriteLine("She loves them dearly and gives you a big hug and kiss!");
                     MyGame.MyCreditScene.Run();
                     break;
                 case 1:
@@ -37,7 +35,12 @@ namespace MothersDayAdventureGame.Scene
         
         public void DisplayGift()
         {
-            WriteLine("Gift here");
+            MyGame.MyPlayer.PickUpDye(ConsoleColor.Blue);
+            ForegroundColor = MyGame.MyPlayer.PaintColor;
+            WriteLine(TextArt.FlowerGift);
+            ResetColor();
+            WriteLine("You give mom the flowers you picked up.");
+            WriteLine("She loves them dearly and gives you a big hug and kiss!");
             ConsoleUtils.WaitForKeyPress();
         }
     }
