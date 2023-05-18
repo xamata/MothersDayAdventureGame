@@ -31,6 +31,7 @@ namespace MothersDayAdventureGame
             HasFlashlight = false;
             HasMarble = false;
             HasDye = false;
+            HasFlowers = false;
         }
     }
 }
