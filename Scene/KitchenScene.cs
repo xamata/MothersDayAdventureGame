@@ -35,7 +35,6 @@ namespace MothersDayAdventureGame.Scene
         
         public void DisplayGift()
         {
-            MyGame.MyPlayer.PickUpDye(ConsoleColor.Blue);
             ForegroundColor = MyGame.MyPlayer.PaintColor;
             WriteLine(TextArt.FlowerGift);
             ResetColor();
