@@ -25,7 +25,7 @@ namespace MothersDayAdventureGame.Scene
             else
             {
                 string prompt = @$"Shed Scene...
-Pick a color of paint to choose from.";
+Pick a color of dye to choose from.";
                 string[] options = { "Red", "Green", "Blue", "Pink" };
                 Menu menu = new Menu(prompt, options);
                 int selectedIndex = menu.Run();
@@ -33,19 +33,19 @@ Pick a color of paint to choose from.";
                 switch (selectedIndex)
                 {
                     case 0:
-                        WriteLine("You pick up the red paint and go back inside.");
+                        WriteLine("You pick up the red dye and go back inside.");
                         MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkRed);
                         break;
                     case 1:
-                        WriteLine("You pick up the green paint and go back inside.");
+                        WriteLine("You pick up the green dye and go back inside.");
                         MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkGreen);
                         break;
                     case 2:
-                        WriteLine("You pick up the blue paint and go back inside.");
+                        WriteLine("You pick up the blue dye and go back inside.");
                         MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkBlue);
                         break;
                     case 3:
-                        WriteLine("You pick up the pink paint and go back inside.");
+                        WriteLine("You pick up the pink dye and go back inside.");
                         MyGame.MyPlayer.PickUpDye(ConsoleColor.DarkMagenta);
                         break;
                 }
