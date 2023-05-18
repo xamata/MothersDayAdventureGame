@@ -36,7 +36,7 @@ namespace MothersDayAdventureGame.Scene
         public void DisplayGift()
         {
             ForegroundColor = MyGame.MyPlayer.PaintColor;
-            WriteLine(TextArt.FlowerGift);
+            WriteLine(TextArt.FlowersArt);
             ResetColor();
             WriteLine("You give mom the flowers you picked up.");
             WriteLine("She loves them dearly and gives you a big hug and kiss!");
