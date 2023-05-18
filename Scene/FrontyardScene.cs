@@ -9,7 +9,7 @@ namespace MothersDayAdventureGame.Scene
 {
     internal class FrontyardScene : Scene
     {
-        private bool GnomeHasMarble;
+        public bool GnomeHasMarble;
         public FrontyardScene(Game game) : base(game)
         {
             GnomeHasMarble = false;
