@@ -66,7 +66,7 @@ namespace MothersDayAdventureGame.Scene
 
         private void DisplayGarden()
         {
-            WriteLine("===Display Garden===");
+            WriteLine(TextArt.GardenArt);
             WriteLine("You pick the prettiest flowers you can find. Good thing mom has tons of them!");
             MyGame.MyPlayer.HasFlowers = true;
         }
