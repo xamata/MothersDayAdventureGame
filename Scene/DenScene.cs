@@ -39,7 +39,7 @@ namespace MothersDayAdventureGame.Scene
                     }
                     else
                     {
-                        WriteLine("Mom is in there, I better not go in!");
+                        WriteLine("Mom is in there, I better not go in without her gift!");
                         ConsoleUtils.WaitForKeyPress();
                         Run();
                     };
